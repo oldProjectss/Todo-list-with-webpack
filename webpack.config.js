@@ -8,6 +8,13 @@ module.exports = {
   },
   devServer: {
     static: './dist',
+    open: {
+      app: {
+        name: 'google-chrome',
+        arguments: ['--incognito', '--new-window'],
+      },
+    },
+    liveReload: true,
   },
   plugins: [
     new HtmlWebpackPlugin({

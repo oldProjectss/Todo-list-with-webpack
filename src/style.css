@@ -1,3 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: rgb(109, 69, 21);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100vh;
+}
+
+.todo_heading {
+  margin: 20px;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.input_section {
+  display: flex;
+  align-items: flex-end;
+  padding: 5px;
+  margin: 0;
+}
+
+.todo_input {
+  border: none;
+  background-color: transparent;
+  width: 95%;
+  padding-top: 15px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: rgb(243, 243, 243);
+  box-shadow: 5px 5px 15px grey;
+  width: 70vw;
+}
+
+.todo_body {
+  width: 100%;
+}
+
+.list_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-ellipsis-vertical {
+  margin-right: 15px;
+}
+
+.enter {
+  color: grey;
+  transform: rotate(90deg);
+}
+
+.list_content {
+  padding: 10px;
+  margin: 5px;
+}
+
+.todo_text {
+  margin-left: 10px;
+}
+
+hr {
+  width: 100%;
+  color: grey;
+}
+
+.clear_btn {
+  width: 100%;
+  background-color: antiquewhite;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px;
+}
+
+@media only screen and (min-width: 800px) {
+  .todo {
+    width: 50%;
+  }
 }
