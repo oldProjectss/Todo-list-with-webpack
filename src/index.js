@@ -6,27 +6,27 @@ const todoHTML = document.querySelector('.todo_list');
 const todoTasks = [
   {
     desctiption: 'string',
-    completed: 'bool',
-    index: 'number',
+    completed: true,
+    index: 1,
   },
   {
     desctiption: 'string',
-    completed: 'bool',
-    index: 'number',
+    completed: true,
+    index: 2,
   },
   {
     desctiption: 'string',
-    completed: 'bool',
-    index: 'number',
+    completed: true,
+    index: 3,
   },
 ];
 
 todoTasks.forEach((task, i) => {
-  task.index = i;
+  task.index = i + 1;
   todoHTML.innerHTML += `<article class="list_item">
                           <div class="list_content">  
                             <input class="checkbox" type="checkbox" id="${task.index}" name="${task.index}" />
-                              <label class="todo_text" for="${task.index}"> ${task.desctiption}</label><br />
+                              <label class="todo_text" for="${task.index}"> ${task.desctiption} index is ${task.index}</label><br />
                             </div>
                               <i class="fa-solid fa-ellipsis-vertical"></i>
                           </article>
