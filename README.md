@@ -2,10 +2,9 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-> In this project, we build a basic website that allows users to add/remove books from a list, using JavaScript objects and arrays. and dynamically modify the DOM and add basic events.
+> In this project, I build a basic website that allows users to add/remove taskes from a list, using JavaScript objects and arrays. and dynamically modify the DOM and add basic events.
 
-![](img/screenshot.png)
-![](img/screenshot1.png)
+![](screenshot.png)
 
 ## Built With
 
@@ -14,7 +13,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://ismailco.github.io/Awesome-books_JavaScript-objects/)
+[Live Demo Link](https://ismailco.github.io/Todo-list-with-webpack/dist/)
 
 ## Getting Started
 
@@ -29,11 +28,11 @@ To get the project up and running you need a browser.
 
 ### Install
 
-To get the project locally, run `git clone git@github.com:Ismailco/Awesome-books_JavaScript-objects.git`
+To get the project locally, run `git clone git@github.com:Ismailco/Todo-list-with-webpack.git`
 
 ### Usage
 
-This project helps you store your favorite books right in your navigator.
+This project is a To-Do app that let you stor your todo taskes in an object.
 
 ### Run tests
 
@@ -50,12 +49,6 @@ For:
 - GitHub: [@ismailco](https://github.com/ismailco)
 - Twitter: [@ismailcourr](https://twitter.com/ismailcourr)
 - LinkedIn: [Ismail Courr](https://linkedin.com/in/ismailcourr)
-
-👤 **Jonathan Sivahera**
-
-- GitHub: [@jssol](https://github.com/jssol)
-- Twitter: [@jsivahera](https://twitter.com/jsivahera)
-- LinkedIn: [Jonathan Sivahera](https://linkedin.com/in/jsivahera)
 
 ## 🤝 Contributing
 
