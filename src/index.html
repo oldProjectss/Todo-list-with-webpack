@@ -9,19 +9,16 @@
     <h1>Hello!</h1>
     <section class="todo">
       <h2 class="todo_heading">Today's To Do</h2>
+      <hr />
       <div class="todo_body">
-        <input type="text" placeholder="Add to your list..." />
-        <br />
-        <div class="todo_list">
-          <article class="list_item">
-            <input type="checkbox" id="task" name="task" />
-            <label for="task"> I have a bike</label><br />
-          </article>
-          <article class="list_item">
-            <input type="checkbox" id="task" name="task" />
-            <label for="task"> I have a bike</label><br />
-          </article>
+        <div class="input_section">
+          <input class="todo_input" type="text" placeholder="Add to your list..." />
+          <i class="fas fa-level-down enter"></i>
         </div>
+        <br />
+        <hr />
+        <div class="todo_list"></div>
+        <button class="clear_btn" type="button">Clear all completed</button>
       </div>
     </section>
   </body>
