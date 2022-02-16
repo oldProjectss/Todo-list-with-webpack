@@ -9,7 +9,6 @@ export const addTask = (desctiption, completed = false, index, todoList) => {
     index,
   };
   todoList.todoTasks.push(task);
-  // displayTasks();
   setLocalStore(todoList.todoTasks);
 };
 
@@ -18,7 +17,6 @@ export const removeTask = (i, todoList) => {
   todoList.todoTasks.forEach((task) => {
     task.index = i + 1;
   });
-  // displayTasks();
   setLocalStore(todoList.todoTasks);
 };
 
@@ -30,6 +28,5 @@ export const editTask = (input, listItem, i, todoList) => {
     input.readOnly = true;
     todoList.todoTasks[i].desctiption = input.value;
     setLocalStore(todoList.todoTasks);
-    // displayTasks();
   }
 };
