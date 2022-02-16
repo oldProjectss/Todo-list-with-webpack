@@ -36,6 +36,32 @@ body {
   outline: none;
 }
 
+.list_content {
+  width: 100%;
+}
+
+.todo_task {
+  border: none;
+  background-color: transparent;
+  width: 90%;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.edit,
+.remove {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.remove {
+  color: brown;
+}
+
 .todo {
   display: flex;
   flex-direction: column;
