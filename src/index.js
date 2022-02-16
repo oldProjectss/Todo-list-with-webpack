@@ -48,9 +48,6 @@ export function displayTasks() {
     listItem.append(listContent, removeButton, editButton);
     todoHTML.append(listItem, hr);
 
-    console.log(i);
-    console.log(task.completed);
-
     editButton.addEventListener('click', () => {
       editTask(input, listItem, i, todoList);
       if (input.readOnly) {
