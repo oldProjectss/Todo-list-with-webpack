@@ -1,6 +1,7 @@
 import './style.css';
 import '../node_modules/@fortawesome/fontawesome-free/js/all.js';
 import { addTask, removeTask, editTask } from './functionality.js';
+import isCompleted from './check.js';
 
 const todoHTML = document.querySelector('.todo_list');
 const todoInput = document.querySelector('.todo_input');
@@ -41,6 +42,10 @@ export function displayTasks() {
     const removeBtn = document.createElement('i');
     removeBtn.classList.add('fas', 'fa-trash');
     const hr = document.createElement('hr');
+    if (task.completed) {
+      input.style.textDecoration = 'line-through';
+      checkbox.setAttribute('checked', '');
+    }
 
     editButton.append(editBtn);
     removeButton.append(removeBtn);
@@ -58,6 +63,13 @@ export function displayTasks() {
     removeButton.addEventListener('click', () => {
       removeTask(i, todoList);
       displayTasks();
+    });
+
+    checkbox.addEventListener('click', () => {
+      isCompleted(task.completed, input, i, todoList);
+      if (!task.completed) {
+        displayTasks();
+      }
     });
   });
 }
